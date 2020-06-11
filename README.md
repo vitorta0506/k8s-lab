@@ -3,6 +3,10 @@
 ### Verificar se todos os pods estão rodando corretamente:
 kubectl get pods --all-namespaces
 
+O comando abaixo da uma visão geral de todos os recursos que estão rodando:
+
+watch kubectl get all --all-namespaces
+
 ### Caso tenha erro em algum pod vamos dar um describe para verificar o motivo do erro:
 kubectl describe pod -n kube-system <nome de pod>
 
